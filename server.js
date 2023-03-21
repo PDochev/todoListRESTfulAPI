@@ -1,11 +1,11 @@
 const { urlencoded } = require("body-parser");
 
-const express = require("express"),
-  app = express(),
-  port = process.env.PORT || 3000,
-  mongoose = require("mongoose"),
-  Task = require("./api/models/todoListModel"),
-  bodyParser = require("body-parser");
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 3000;
+const mongoose = require("mongoose");
+const Task = require("./api/models/todoListModel");
+const bodyParser = require("body-parser");
 
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/Tododb");
